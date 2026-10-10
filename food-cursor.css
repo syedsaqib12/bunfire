@@ -1,0 +1,7 @@
+.food-trail{position:fixed;inset:0;z-index:80;pointer-events:none;overflow:hidden;opacity:0;visibility:hidden;transition:opacity .15s;contain:layout style}
+.food-trail.is-visible{opacity:1;visibility:visible}
+.food-trail svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.food-trail path{fill:none;stroke:#fff9ec;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;opacity:.9}
+.food-trail-node{position:absolute;top:0;left:0;width:var(--trail-size,32px);height:var(--trail-size,32px);border:2px solid #fff9ec;border-radius:50%;background:#fff9ecd9;display:grid;place-items:center;box-shadow:0 1px 4px #27231c20;will-change:transform;pointer-events:none}
+.food-trail-node img{width:77%;height:77%;object-fit:contain;pointer-events:none;user-select:none}
+@media(prefers-reduced-motion:reduce),(hover:none),(pointer:coarse){.food-trail{display:none}}

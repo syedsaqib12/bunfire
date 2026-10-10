@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f9c846">
+  <meta name="description" content="Big burger energy. Explore BUNFIRE's smash burgers, crispy sides, and the layers behind every bite. A restaurant concept with a sample menu in US dollars.">
+  <title>BUNFIRE — Big Burger Energy</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/barlow-condensed-900.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="assets/burger-hero.png" as="image">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="footer-playground.css">
+  <link rel="stylesheet" href="food-cursor.css">
+  <script src="app.js" defer></script>
+  <script src="footer-playground.js" defer></script>
+  <script src="food-cursor.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="header" id="header">
+    <a class="wordmark" href="#home" aria-label="BUNFIRE home">BUNFIRE<span class="logo-spark" aria-hidden="true">✳</span></a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#menu">The menu</a><a href="#layers">Inside the bite</a><a href="#story">Our vibe</a>
+    </nav>
+    <a class="nav-cta" href="#menu">LET’S TALK BURGERS <span aria-hidden="true">↗</span></a>
+    <button class="mobile-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span></button>
+  </header>
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" hidden><a href="#menu">The menu ↗</a><a href="#layers">Inside the bite ↗</a><a href="#story">Our vibe ↗</a></nav>
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-eyebrow"><span class="little-star" aria-hidden="true">✳</span> SERIOUS FLAVOR. ZERO BORING BITES.</div>
+      <h1 id="hero-title">BIG BURGER<br><span>ENERGY.</span></h1>
+      <div class="hero-object" id="hero-object"><img class="hero-burger" src="assets/burger-hero.png" alt="Double smash burger with golden brioche, melting cheddar, tomatoes and lettuce" width="1024" height="1024" fetchpriority="high"><div class="hero-shadow" aria-hidden="true"></div></div>
+      <div class="hero-stamp"><svg viewBox="0 0 120 120" aria-hidden="true"><defs><path id="stamp-circle" d="M 60,60 m -46,0 a 46,46 0 1,1 92,0 a 46,46 0 1,1 -92,0"></path></defs><text><textPath href="#stamp-circle">SMASHED • STACKED • SO GOOD • </textPath></text></svg><span aria-hidden="true">✳</span></div>
+      <span class="hero-scribble" aria-hidden="true">a little messy.<br>a lot delicious.<svg viewBox="0 0 120 75"><path d="M10 8 C95 7 105 40 71 57 M71 57 L78 39 M71 57 L93 56"/></svg></span>
+      <div class="hero-bottom"><p>Golden buns. Crispy edges.<br>The kind of burger you think about later.</p><a href="#menu" class="button button-dark">EXPLORE THE MENU <span aria-hidden="true">↗</span></a><a class="scroll-cue" href="#intro"><span>SCROLL FOR THE GOOD STUFF</span><span aria-hidden="true">↓</span></a></div>
+      <div class="hero-corner" aria-hidden="true">01 / MADE TO CRAVE</div>
+    </section>
+    <div class="ticker" aria-label="Smash, stack, repeat"><div class="ticker-track" aria-hidden="true"><span>SMASH. STACK. REPEAT.</span><span>✳</span><span>GOOD MOOD FOOD.</span><span>✳</span><span>SMASH. STACK. REPEAT.</span><span>✳</span><span>GOOD MOOD FOOD.</span><span>✳</span></div></div>
+    <section class="flavor-playground" id="flavor-playground" aria-label="A playful BUNFIRE sign with floating burger ingredients">
+      <div class="flavor-topline"><span>GOOD FOOD. GOOD MOOD. BIG BURGER ENERGY.</span><button class="flavor-shuffle" type="button" aria-label="Make the floating burger ingredients bounce">SHAKE IT UP <span aria-hidden="true">↗</span></button></div>
+      <div class="flavor-stage">
+        <div class="flavor-word" role="img" aria-label="BUNFIRE">
+          <span class="flavor-letter">B</span><span class="flavor-letter flavor-letter-u">U<span class="flavor-face flavor-logo-face" aria-hidden="true"><span class="flavor-eyes"><i class="flavor-eye"><b class="flavor-pupil"></b></i><i class="flavor-eye"><b class="flavor-pupil"></b></i></span><svg class="flavor-smile" viewBox="0 0 40 20"><path d="M5 4 Q20 23 35 4"/></svg></span></span><span class="flavor-letter">N</span><span class="flavor-letter">F</span><span class="flavor-letter">I</span><span class="flavor-letter flavor-letter-r">R<span class="flavor-face flavor-logo-face" aria-hidden="true"><span class="flavor-eyes"><i class="flavor-eye"><b class="flavor-pupil"></b></i><i class="flavor-eye"><b class="flavor-pupil"></b></i></span><svg class="flavor-smile" viewBox="0 0 40 20"><path d="M5 4 Q20 23 35 4"/></svg></span></span><span class="flavor-letter">E</span>
+        </div>
+        <button class="flavor-ingredient flavor-lettuce" data-ingredient="lettuce" type="button" aria-label="Bounce the lettuce"><img src="assets/flavor-lettuce.png" width="1254" height="1254" loading="lazy" alt="Fresh ruffled lettuce leaf"><span class="flavor-face" aria-hidden="true"><span class="flavor-eyes"><i class="flavor-eye"><b class="flavor-pupil"></b></i><i class="flavor-eye"><b class="flavor-pupil"></b></i></span></span></button>
+        <button class="flavor-ingredient flavor-tomato" data-ingredient="tomato" type="button" aria-label="Bounce the tomato"><img src="assets/flavor-tomato.png" width="1254" height="1254" loading="lazy" alt="Juicy tomato slice"><span class="flavor-face" aria-hidden="true"><span class="flavor-eyes"><i class="flavor-eye"><b class="flavor-pupil"></b></i><i class="flavor-eye"><b class="flavor-pupil"></b></i></span></span></button>
+        <button class="flavor-ingredient flavor-cheese" data-ingredient="cheese" type="button" aria-label="Bounce the cheese"><img src="assets/flavor-cheese.png" width="1254" height="1254" loading="lazy" alt="Folded cheddar cheese slice"><span class="flavor-face" aria-hidden="true"><span class="flavor-eyes"><i class="flavor-eye"><b class="flavor-pupil"></b></i><i class="flavor-eye"><b class="flavor-pupil"></b></i></span></span></button>
+        <button class="flavor-ingredient flavor-patty" data-ingredient="patty" type="button" aria-label="Bounce the beef patty"><img src="assets/flavor-patty.png" width="1254" height="1254" loading="lazy" alt="Seared burger patty"><span class="flavor-face" aria-hidden="true"><span class="flavor-eyes"><i class="flavor-eye"><b class="flavor-pupil"></b></i><i class="flavor-eye"><b class="flavor-pupil"></b></i></span></span></button>
+        <span class="flavor-hint">A LITTLE PLAYFUL. A LOT DELICIOUS.</span>
+      </div>
+    </section>
+    <section class="intro section-pad" id="intro" aria-labelledby="intro-title">
+      <div class="intro-heading reveal"><div class="eyebrow">THE BEAUTY OF A GOOD BURGER</div><h2 id="intro-title">LESS FUSS.<br>MORE <span class="outline">FLAVOR.</span></h2></div>
+      <div class="intro-copy reveal"><span class="small-spark" aria-hidden="true">✳</span><p>That first bite? It should stop the conversation.</p><p class="body-copy">A golden, toasted bun. A juicy patty with a proper crispy edge. Cheese doing exactly what cheese should do. Every layer has a part to play.</p><a class="text-link" href="#layers">MEET YOUR NEXT FAVORITE BITE <span aria-hidden="true">↘</span></a></div>
+      <div class="photo-band reveal"><figure class="photo-main"><img src="assets/burger-editorial.jpg" width="1000" height="700" loading="lazy" alt="Cheeseburger with fresh vegetables and a toasted bun"><figcaption>ALL THE GOOD STUFF. ALL IN.</figcaption></figure><figure class="photo-side"><img src="assets/fries-editorial.jpg" width="1000" height="700" loading="lazy" alt="Crispy golden fries"><div class="photo-label">BETTER<br>TOGETHER<span aria-hidden="true">↗</span></div></figure></div>
+    </section>
+    <section class="layers" id="layers" aria-labelledby="layers-title">
+      <div class="layers-sticky">
+        <div class="layers-heading"><div class="eyebrow">THE ANATOMY OF A CRAVING</div><h2 id="layers-title">EVERY LAYER.<br><span>ALL FLAVOR.</span></h2><p>Scroll a little. Get to know your burger.</p></div>
+        <div class="burger-stack" id="burger-stack" aria-label="Animated burger ingredients separating as you scroll">
+          <div class="stack-shadow" aria-hidden="true"></div>
+          <div class="burger-layer layer-top" data-layer="top"><img src="assets/burger-hero.png" alt="" width="1024" height="1024" loading="lazy"></div>
+          <div class="burger-layer layer-greens" data-layer="greens"><img src="assets/burger-hero.png" alt="" width="1024" height="1024" loading="lazy"></div>
+          <div class="burger-layer layer-patty" data-layer="patty"><img src="assets/burger-hero.png" alt="" width="1024" height="1024" loading="lazy"></div>
+          <div class="burger-layer layer-base" data-layer="base"><img src="assets/burger-hero.png" alt="" width="1024" height="1024" loading="lazy"></div>
+        </div>
+        <div class="ingredient-label ingredient-bun"><span>01</span><strong>THE GOLDEN BUN</strong><p>Toasty outside. Soft inside.</p><i aria-hidden="true"></i></div>
+        <div class="ingredient-label ingredient-greens"><span>02</span><strong>THE FRESH CRUNCH</strong><p>Lettuce, tomato & pickles.</p><i aria-hidden="true"></i></div>
+        <div class="ingredient-label ingredient-patty"><span>03</span><strong>THE SMASH & MELT</strong><p>Crispy beef. Melty cheddar.</p><i aria-hidden="true"></i></div>
+        <div class="ingredient-label ingredient-base"><span>04</span><strong>THE LAST LITTLE SECRET</strong><p>A swipe of signature sauce.</p><i aria-hidden="true"></i></div>
+        <div class="layer-progress" aria-hidden="true"><span>THE FLAVOR BREAKDOWN</span><div><i></i></div><span class="progress-number">00%</span></div>
+      </div>
+    </section>
+    <section class="menu section-pad" id="menu" aria-labelledby="menu-title">
+      <div class="section-head reveal"><div><div class="eyebrow">PICK YOUR HAPPY PLACE</div><h2 id="menu-title">THE GOOD<br><span>STUFF.</span></h2></div><div class="menu-intro"><p>A burger for every kind of craving.<br>A side for every kind of burger.</p><span class="menu-note">SAMPLE MENU · PRICES IN USD</span></div></div>
+      <div class="menu-controls reveal"><div class="filters" role="group" aria-label="Filter menu"><button class="filter active" data-filter="all" aria-pressed="true">ALL THE GOOD STUFF <span>06</span></button><button class="filter" data-filter="burgers" aria-pressed="false">BURGERS <span>04</span></button><button class="filter" data-filter="sides" aria-pressed="false">SIDES <span>02</span></button></div><span id="menu-count" aria-live="polite">6 delicious choices</span></div>
+      <div class="menu-grid">
+        <button class="menu-card reveal" data-category="burgers" data-item="classic" aria-label="View The Classic Smash ingredients"><div class="card-art card-yellow"><span class="card-tag">THE GO-TO</span><img src="assets/burger-hero.png" width="1024" height="1024" loading="lazy" alt="Classic double cheeseburger"><span class="card-arrow" aria-hidden="true">↗</span></div><div class="card-title"><h3>The Classic Smash</h3><span>$12</span></div><p>Double beef, cheddar, pickles & house sauce.</p><span class="card-bottom">A LITTLE CLASSIC. A LOT OF FLAVOR. <span>VIEW DETAILS +</span></span></button>
+        <button class="menu-card reveal" data-category="burgers" data-item="heat" aria-label="View Hot Honey Heat ingredients"><div class="card-art card-peach"><span class="card-tag">BRING THE HEAT</span><img class="burger-tilt" src="assets/burger-hero.png" width="1024" height="1024" loading="lazy" alt="Cheeseburger representing the Hot Honey Heat sample"><span class="card-arrow" aria-hidden="true">↗</span></div><div class="card-title"><h3>Hot Honey Heat</h3><span>$14</span></div><p>Beef, pepper jack, jalapeños & hot honey.</p><span class="card-bottom">SWEET. SPICY. SECOND BITE READY. <span>VIEW DETAILS +</span></span></button>
+        <button class="menu-card reveal" data-category="burgers" data-item="bbq" aria-label="View The Smoky Stack ingredients"><div class="card-art card-green"><span class="card-tag">BIG STACK ENERGY</span><img class="burger-tall" src="assets/burger-hero.png" width="1024" height="1024" loading="lazy" alt="Double burger representing The Smoky Stack sample"><span class="card-arrow" aria-hidden="true">↗</span></div><div class="card-title"><h3>The Smoky Stack</h3><span>$16</span></div><p>Double beef, smoked cheddar, onions & BBQ.</p><span class="card-bottom">GO BIG. THEN GO ONE BITE BIGGER. <span>VIEW DETAILS +</span></span></button>
+        <button class="menu-card reveal" data-category="burgers" data-item="garden" aria-label="View Garden Party ingredients"><div class="card-art card-lilac"><span class="card-tag">PLANT POWER</span><img src="assets/grill-editorial.jpg" width="1000" height="700" loading="lazy" alt="Burger photograph illustrating the sample menu"><span class="card-arrow" aria-hidden="true">↗</span></div><div class="card-title"><h3>Garden Party</h3><span>$13</span></div><p>Plant patty, lettuce, tomato & herb mayo.</p><span class="card-bottom">THE GARDEN BROUGHT ITS A-GAME. <span>VIEW DETAILS +</span></span></button>
+        <button class="menu-card reveal" data-category="sides" data-item="fries" aria-label="View Golden Hour Fries ingredients"><div class="card-art card-yellow"><span class="card-tag">THE PERFECT PLUS ONE</span><img class="side-photo" src="assets/fries-editorial.jpg" width="1000" height="700" loading="lazy" alt="Crispy fries"><span class="card-arrow" aria-hidden="true">↗</span></div><div class="card-title"><h3>Golden Hour Fries</h3><span>$5</span></div><p>Skin-on fries, sea salt & signature seasoning.</p><span class="card-bottom">CRUNCH FIRST. ASK QUESTIONS LATER. <span>VIEW DETAILS +</span></span></button>
+        <button class="menu-card reveal" data-category="sides" data-item="loaded" aria-label="View Fully Loaded Fries ingredients"><div class="card-art card-peach"><span class="card-tag">EXTRA EVERYTHING</span><img class="side-photo loaded-photo" src="assets/fries-editorial.jpg" width="1000" height="700" loading="lazy" alt="Fries representing the loaded fries sample"><span class="card-arrow" aria-hidden="true">↗</span></div><div class="card-title"><h3>Fully Loaded Fries</h3><span>$8</span></div><p>Golden fries, cheese sauce, jalapeños & ranch.</p><span class="card-bottom">FOR WHEN MORE IS DEFINITELY MORE. <span>VIEW DETAILS +</span></span></button>
+      </div>
+      <p class="photo-note">An illustrative menu for this restaurant concept. Food photos are style references; final dishes may vary.</p>
+    </section>
+    <section class="story" id="story" aria-labelledby="story-title"><div class="story-image"><img src="assets/burger-editorial.jpg" width="1000" height="700" loading="lazy" alt="A burger ready for its first bite"><span class="story-sticker" aria-hidden="true">MORE<br>NAPKINS.<br>PLEASE.</span></div><div class="story-copy reveal"><div class="eyebrow">WELCOME TO OUR KIND OF GOOD TIME</div><h2 id="story-title">GOOD FOOD.<br>GREAT MOOD.<br><span>NO BIG DEAL.</span></h2><p>BUNFIRE is a simple idea: make the burger the best part of your day. Bold flavors, a little playful chaos, and something good between two buns.</p><a href="#menu" class="button button-dark">FIND YOUR FAVORITE <span aria-hidden="true">↗</span></a></div></section>
+    <section class="closing" aria-labelledby="closing-title"><span class="closing-star" aria-hidden="true">✳</span><div class="eyebrow">YOU KNOW WHAT TO DO</div><h2 id="closing-title">FOLLOW YOUR<br><span>CRAVING.</span></h2><a class="button button-yellow" href="#menu">BACK TO THE GOOD STUFF <span aria-hidden="true">↗</span></a><img src="assets/burger-hero.png" width="1024" height="1024" loading="lazy" alt="" aria-hidden="true"></section>
+  </main>
+  <footer><a class="wordmark" href="#home">BUNFIRE<span aria-hidden="true">✳</span></a><div class="footer-links"><a href="#menu">The menu</a><a href="#layers">Inside the bite</a><a href="#story">Our vibe</a></div><div class="footer-bottom"><span>© 2026 BUNFIRE · Restaurant concept</span><span>BIG BURGER ENERGY. ALWAYS.</span><a href="#home">BACK TO TOP ↑</a></div>
+  </footer>
+  <dialog class="item-dialog" id="item-dialog" aria-labelledby="dialog-title"><button class="dialog-close" aria-label="Close menu details">✕</button><div class="dialog-art"><img id="dialog-image" src="assets/burger-hero.png" alt="" width="1024" height="1024"></div><div class="dialog-copy"><div class="eyebrow">MEET YOUR CRAVING</div><h2 id="dialog-title"></h2><p class="dialog-description"></p><div class="dialog-price"></div><h3>WHAT’S INSIDE</h3><ul class="ingredient-list"></ul><p class="allergen-note"></p><p class="menu-note">SAMPLE MENU · PRICES IN USD</p></div></dialog>
+</body>
+</html>
